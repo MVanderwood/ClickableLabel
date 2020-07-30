@@ -17,28 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="X2W-JS-5AR">
-                                <rect key="frame" x="20" y="94" width="374" height="193.5"/>
+                                <rect key="frame" x="20" y="94" width="374" height="337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please go to https://www.bing.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joh-XL-ZVK" userLabel="Testlabel1" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This string has no links" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joh-XL-ZVK" userLabel="Testlabel0" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please go to https://www.bing.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzY-Tz-oKZ" userLabel="Testlabel1" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="42.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please go to bing.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQy-Ym-O4X" userLabel="Testlabel2" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="51" width="374" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="85" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.bing.com -- check it out" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUM-Vt-nCN" userLabel="Testlabel3" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="101.5" width="374" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please go to www.bing.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUM-Vt-nCN" userLabel="Testlabel3" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.bing.com --  or try -- https://www.yahoo.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-sm-f4w" userLabel="Testlabel4" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="152.5" width="374" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.bing.com -- check it out" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-sm-f4w" userLabel="Testlabel4" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="170.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.bing.com --  or try -- https://www.yahoo.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-jF-1wA" userLabel="Testlabel5" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="213" width="374" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.bing.com --  or try -- https://www.yahoo.com or even https://www.google.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pem-4q-T7l" userLabel="Testlabel6" customClass="InteractiveLinkLabel" customModule="ClickableLabel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="276" width="374" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -48,19 +66,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X2W-JS-5AR" secondAttribute="bottom" multiplier="3:1" id="72A-1k-1Nz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X2W-JS-5AR" secondAttribute="bottom" multiplier="2:1" id="72A-1k-1Nz"/>
                             <constraint firstItem="X2W-JS-5AR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JdO-zo-6bp"/>
                             <constraint firstItem="X2W-JS-5AR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="NZY-cK-a7t"/>
                             <constraint firstAttribute="trailing" secondItem="X2W-JS-5AR" secondAttribute="trailing" constant="20" id="Tdr-ik-NOu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="testLabel1" destination="joh-XL-ZVK" id="kQg-69-MLl"/>
-                        <outlet property="testLabel2" destination="wQy-Ym-O4X" id="ci3-CH-EJN"/>
-                        <outlet property="testLabel3" destination="lUM-Vt-nCN" id="bom-mJ-cRB"/>
-                        <outlet property="testLabel4" destination="fvk-sm-f4w" id="fEN-lc-Oje"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

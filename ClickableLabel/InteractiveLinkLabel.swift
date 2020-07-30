@@ -13,51 +13,57 @@ class InteractiveLinkLabel: UILabel {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.configure()
-        self.detectHyperlinks()
+
+        if let text = self.text {
+            self.attributedText = self.activateHyperlinks(in: text)
+        }
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configure()
-        self.detectHyperlinks()
+
+        if let text = self.text {
+            self.attributedText = self.activateHyperlinks(in: text)
+        }
     }
 
     func configure() {
         isUserInteractionEnabled = true
     }
 
-    private func detectHyperlinks() {
-        guard
-            let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue),
-            let text = text
-        else { return }
+    private func activateHyperlinks(in text: String) -> NSMutableAttributedString {
+        guard let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+            else { return NSMutableAttributedString(string: text) }
 
         let matches = detector.matches(in: text, options: [], range: NSRange(location: 0, length: text.utf16.count))
 
-        var urls = [Substring]()
-        for match in matches {
-            guard let range = Range(match.range, in: text) else { continue }
-            urls.append(text[range])
+        guard matches.count > 0 else { return NSMutableAttributedString(string: text) }
+        let match = matches[0]
+
+        guard let range = Range(match.range, in: text) else { return NSMutableAttributedString(string: text) }
+
+        let urlString = String(text[range])
+        let output    = NSMutableAttributedString()
+
+        // Split Text into Components (by url)
+        let textComponents = text.components(separatedBy: urlString)
+
+        // Append part before the url
+        output.append(NSAttributedString(string: textComponents[0], attributes: nil))
+
+        guard let correctedUrl = URL(string: String(urlString.hasPrefix("http") ? urlString : "http://\(urlString)")) else { return NSMutableAttributedString(string: text) }
+
+        // Append the url
+        output.append(NSAttributedString(string: String(urlString), attributes: [NSAttributedString.Key.link: correctedUrl]))
+
+        // Append part after the url (also scanning it for hyperlinks
+        if textComponents.count > 1, textComponents[1] != "" {
+
+            output.append(activateHyperlinks(in: textComponents[1]))
         }
 
-        let output = NSMutableAttributedString()
-        for url in urls {
-            let url = String(url)
-            let textComponents = text.components(separatedBy: url)
-            output.append(NSAttributedString(string: textComponents[0], attributes: nil))
-
-            guard let correctedUrl = URL(string: String(url.hasPrefix("http") ? url : "http://\(url)")) else { continue }
-            output.append(NSAttributedString(string: String(url), attributes: [NSAttributedString.Key.link: correctedUrl]))
-
-            if textComponents.count > 2 {
-                let tailComponents = textComponents[2..<(textComponents.count - 1)]
-                let tailArray = Array(tailComponents)
-                let tail = tailArray.joined(separator: url)
-                output.append(NSAttributedString(string: tail, attributes: nil))
-            }
-        }
-
-        attributedText = output
+        return output
     }
 
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
