@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA12019C236A572F00F6143B /* String - HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12019B236A572F00F6143B /* String - HTML.swift */; };
 		CA12019E236A57BE00F6143B /* InteractiveLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12019D236A57BE00F6143B /* InteractiveLinkLabel.swift */; };
-		CA1201A0236A5B6100F6143B /* InteractiveLinkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12019F236A5B6100F6143B /* InteractiveLinkTextView.swift */; };
 		CAB190472369C0B9001FC721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB190462369C0B9001FC721 /* AppDelegate.swift */; };
 		CAB190492369C0B9001FC721 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB190482369C0B9001FC721 /* ViewController.swift */; };
 		CAB1904C2369C0B9001FC721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB1904A2369C0B9001FC721 /* Main.storyboard */; };
 		CAB1904E2369C0BC001FC721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB1904D2369C0BC001FC721 /* Assets.xcassets */; };
 		CAB190512369C0BC001FC721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB1904F2369C0BC001FC721 /* LaunchScreen.storyboard */; };
-		CAB1905C2369C0BC001FC721 /* ClickableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1905B2369C0BC001FC721 /* ClickableLabelTests.swift */; };
-		CAB190672369C0BC001FC721 /* ClickableLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB190662369C0BC001FC721 /* ClickableLabelUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA12019B236A572F00F6143B /* String - HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String - HTML.swift"; sourceTree = "<group>"; };
 		CA12019D236A57BE00F6143B /* InteractiveLinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveLinkLabel.swift; sourceTree = "<group>"; };
-		CA12019F236A5B6100F6143B /* InteractiveLinkTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveLinkTextView.swift; sourceTree = "<group>"; };
 		CAB190432369C0B9001FC721 /* ClickableLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickableLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB190462369C0B9001FC721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB190482369C0B9001FC721 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,11 +42,7 @@
 		CAB190502369C0BC001FC721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB190522369C0BC001FC721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB190572369C0BC001FC721 /* ClickableLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickableLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAB1905B2369C0BC001FC721 /* ClickableLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableLabelTests.swift; sourceTree = "<group>"; };
-		CAB1905D2369C0BC001FC721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB190622369C0BC001FC721 /* ClickableLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickableLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAB190662369C0BC001FC721 /* ClickableLabelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableLabelUITests.swift; sourceTree = "<group>"; };
-		CAB190682369C0BC001FC721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				CAB190452369C0B9001FC721 /* ClickableLabel */,
-				CAB1905A2369C0BC001FC721 /* ClickableLabelTests */,
-				CAB190652369C0BC001FC721 /* ClickableLabelUITests */,
 				CAB190442369C0B9001FC721 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,33 +93,13 @@
 			children = (
 				CAB190462369C0B9001FC721 /* AppDelegate.swift */,
 				CAB190482369C0B9001FC721 /* ViewController.swift */,
-				CA12019B236A572F00F6143B /* String - HTML.swift */,
 				CA12019D236A57BE00F6143B /* InteractiveLinkLabel.swift */,
-				CA12019F236A5B6100F6143B /* InteractiveLinkTextView.swift */,
 				CAB1904A2369C0B9001FC721 /* Main.storyboard */,
 				CAB1904D2369C0BC001FC721 /* Assets.xcassets */,
 				CAB1904F2369C0BC001FC721 /* LaunchScreen.storyboard */,
 				CAB190522369C0BC001FC721 /* Info.plist */,
 			);
 			path = ClickableLabel;
-			sourceTree = "<group>";
-		};
-		CAB1905A2369C0BC001FC721 /* ClickableLabelTests */ = {
-			isa = PBXGroup;
-			children = (
-				CAB1905B2369C0BC001FC721 /* ClickableLabelTests.swift */,
-				CAB1905D2369C0BC001FC721 /* Info.plist */,
-			);
-			path = ClickableLabelTests;
-			sourceTree = "<group>";
-		};
-		CAB190652369C0BC001FC721 /* ClickableLabelUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CAB190662369C0BC001FC721 /* ClickableLabelUITests.swift */,
-				CAB190682369C0BC001FC721 /* Info.plist */,
-			);
-			path = ClickableLabelUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,11 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA12019C236A572F00F6143B /* String - HTML.swift in Sources */,
 				CA12019E236A57BE00F6143B /* InteractiveLinkLabel.swift in Sources */,
 				CAB190492369C0B9001FC721 /* ViewController.swift in Sources */,
 				CAB190472369C0B9001FC721 /* AppDelegate.swift in Sources */,
-				CA1201A0236A5B6100F6143B /* InteractiveLinkTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB1905C2369C0BC001FC721 /* ClickableLabelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB190672369C0BC001FC721 /* ClickableLabelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
